@@ -3,13 +3,15 @@ package net.alexanderpetrov.algorithms.sorting;
 /**
  * Selection sort
  * 
- * Time complexity: Average: O(n^2) Best: O(n^2) Worst: O(n^2)
+ * Time complexity:
+ * 	Average: O(n^2)
+ * 	Best:    O(n^2)
+ * 	Worst:   O(n^2)
  *
  * Memory: O(1) 
  * Stable: No
  *
  */
-
 public class SelectionSort<T extends Comparable<T>> {
 
 	public static <T extends Comparable<T>> T[] sort(T[] array) {

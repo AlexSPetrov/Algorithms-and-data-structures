@@ -25,6 +25,19 @@ public class Sorting {
 		assertTrue("Selection sort, EMPTY_ARRAY: "+printResult(result), isEqual(result, EMPTY_ARRAY));
 
 	}
+	
+	@Test
+	public void testInsertionSort() {
+		Integer[] result = InsertionSort.sort(MEDIUM_UNSORTED.clone());
+		assertTrue("Selection sort, MEDIUM_UNSORTED: "+printResult(result), isEqual(result, MEDIUM_SORTED));
+
+		result = InsertionSort.sort(SINGLE_ELEMENT.clone());
+		assertTrue("Selection sort, SINGLE_ELEMENT: "+printResult(result), isEqual(result, SINGLE_ELEMENT));
+
+		result = InsertionSort.sort(EMPTY_ARRAY.clone());
+		assertTrue("Selection sort, EMPTY_ARRAY: "+printResult(result), isEqual(result, EMPTY_ARRAY));
+
+	}
 
 	private boolean isEqual(Integer[] first, Integer[] second) {
 		for (int i = 0; i < first.length; i++)
